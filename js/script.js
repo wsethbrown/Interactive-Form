@@ -171,7 +171,6 @@ function emailValidation() {
         }
         email.parentElement.className = 'not-valid'
         email.parentElement.lastElementChild.style.display = "block"
-        email.focus()
         return false
     }
 }
@@ -186,7 +185,6 @@ function activitiesValidation() {
     } else {
         activitiesFieldSet.firstElementChild.className = 'not-valid'
         activitiesFieldSet.lastElementChild.className = "block"
-        activitiesFieldSet.focus()
         return false
     }
 }
@@ -201,7 +199,6 @@ function ccValidation() {
     } else
         ccNum.parentElement.className = 'not-valid'
         ccNum.parentElement.lastElementChild.className = "block"
-        ccNum.focus()
         return false
 }
 
@@ -215,7 +212,6 @@ function zipValidation() {
     } else {
         zip.parentElement.className = 'not-valid'
         zip.parentElement.lastElementChild.className = "block"
-        zip.focus()
         return false
     }
 }
@@ -231,7 +227,6 @@ function cvvValidation() {
     } else {
         cvv.parentElement.className = 'not-valid'
         cvv.parentElement.lastElementChild.className = "block"
-        cvv.focus()
         return false
     }
 }
