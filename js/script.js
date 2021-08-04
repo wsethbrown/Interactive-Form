@@ -219,7 +219,7 @@ function zipValidation() {
 
 //check if cvv input box matches typical cvv format
 function cvvValidation() {
-    const cvvNumValidated = /^[0-9]{3}/.test(cvv.value)
+    const cvvNumValidated = /^[0-9]{3}$/.test(cvv.value)
     if (cvvNumValidated) {
         cvv.parentElement.className = 'valid'
         cvv.parentElement.lastElementChild.style.display = "none"
